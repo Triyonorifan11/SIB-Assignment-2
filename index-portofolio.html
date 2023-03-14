@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Sesi 2 - Styling with CSS</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/fotoProfil.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="box d-sm-none"></div>
+    <div class="box2 d-sm-none"></div>
+
+    <header id="top">
+        <nav id="navbar" class="navbar shadow container">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Inventory</a></li>
+            </ul>
+            <div class="dropdown">
+                <span class="bar-btn"></span>
+                <span class="bar-btn"></span>
+                <span class="bar-btn"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="card d-flex mt-10 shadow">
+            <div class="d-flex container">
+                <img src="assets/images/foto.png" alt="Foto Profil" width="150" class="foto-style">
+                <div class="profile ml-50px profile-sm">
+                    <h1 id="nama_user">Triyono Rifan</h1>
+                    <p id="role_user">Front End Developer</p>
+                    <div class="d-flex group-btn">
+                        <a href="#" id="btn_edit" class="btn btn-primary">Edit</a>
+                        <a href="https://www.instagram.com/t_riyo.id/" target="_blank" class="btn btn-success">Kontak</a>
+                        <a href="https://www.linkedin.com/in/triyono-rifan-a19142224/" target="_blank" class="btn btn-primary">Resume</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile detail">
+                <div class="d-flex w-100">
+                    <div class="font-bold w-content" style="line-height: 1.3rem;">
+                        <p>Availbility</p>
+                        <p>Usia</p>
+                        <p>Lokasi</p>
+                        <p>Universitas</p>
+                        <p>Email</p>
+                    </div>
+                    <div class="ml-50px w-50" style="line-height: 1.3rem;">
+                        <p id="availbility_user">full time</p>
+                        <p id="usia_user">21</p>
+                        <p id="lokasi_user">Surabaya</p>
+                        <p id="universitas_user">UPN "Veteran" Jawa Timur</p>
+                        <p id="email_user">triyonorifan01@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card shadow p-50 hidden" id="card-form">
+            <form action="#" method="post" id="form-portofolio" >
+                <div class="form-control">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input type="text" id="nama" name="nama" class="form-input" autofocus>
+                </div>
+                <div class="form-control">
+                    <label for="role" class="form-label">Role</label>
+                    <input type="text" id="role" name="role" class="form-input">
+                </div>
+                <div class="form-control">
+                    <label for="availbility" class="form-label">Availbility</label>
+                    <input type="text" id="availbility" name="availbility" class="form-input">
+                </div>
+                <div class="form-control">
+                    <label for="usia" class="form-label">Usia</label>
+                    <input type="number" id="usia" name="usia" class="form-input">
+                </div>
+                <div class="form-control">
+                    <label for="lokasi" class="form-label">Lokasi</label>
+                    <input type="text" id="lokasi" name="lokasi" class="form-input">
+                </div>
+                <div class="form-control">
+                    <label for="universitas class="form-label">Universitas</label>
+                    <input type="text" id="universitas" name="universitas" class="form-input">
+                </div>
+                <div class="form-control">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-input">
+                </div>
+                <div class="form-control">
+                    <input type="submit" id="btn_submit" name="btn_submit" class="form-input btn btn-primary">
+                </div>
+                
+                
+            </form>
+        </section>
+    </main>
+
+    <script src="assets/js/form-portofolio.js"></script>
+</body>
+
+</html>
